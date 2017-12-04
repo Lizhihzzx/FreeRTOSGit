@@ -869,11 +869,11 @@ ARM Macro Assembler    Page 14
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=..\obj\startup_stm32f40_41xxx.d -o..\obj\startup_stm32f40_41xxx
-.o -I"C:\Users\Lee\Desktop\科研项目\FREERTOS控制器开发\FreeRTOS直流电机V1.2Kalm
-an Test\USER\RTE" -I"E:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8
-\Device\Include" -I"E:\Program Files\Keil_v5\ARM\CMSIS\Include" --predefine="__
-UVISION_VERSION SETA 514" --predefine="STM32F40_41xxx SETA 1" --list=..\obj\sta
-rtup_stm32f40_41xxx.lst ..\CORE\startup_stm32f40_41xxx.s
+.o -IC:\Users\Lee\Desktop\FreeRTOSGit\FreeRTOS_MainCtrl\USER\RTE -I"E:\Program 
+Files\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include" -I"E:\Program F
+iles\Keil_v5\ARM\CMSIS\Include" --predefine="__UVISION_VERSION SETA 514" --pred
+efine="STM32F40_41xxx SETA 1" --list=..\obj\startup_stm32f40_41xxx.lst ..\CORE\
+startup_stm32f40_41xxx.s
 
 
 

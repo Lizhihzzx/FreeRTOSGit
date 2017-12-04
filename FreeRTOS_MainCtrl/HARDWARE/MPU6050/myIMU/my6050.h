@@ -4,6 +4,7 @@
 #include "mpu6050.h"
 #include "sys.h"
 #include "math.h"
+#include "Kalman.h"
 
 typedef struct {
 	float Pitch;
@@ -13,4 +14,7 @@ typedef struct {
 
 void MPUCalc(void);
 void IMUupdate(float gx, float gy, float gz, float ax, float ay, float az);
+
+
+
 #endif

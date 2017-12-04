@@ -39,3 +39,4 @@
 ..\obj\my6050.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\my6050.o: ..\HARDWARE\MPU6050\mpu6050.h
 ..\obj\my6050.o: E:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\my6050.o: ..\DRIVER\KALMAN\Kalman.h

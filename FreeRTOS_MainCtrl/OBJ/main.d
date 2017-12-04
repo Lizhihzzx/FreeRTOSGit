@@ -56,10 +56,10 @@
 ..\obj\main.o: ..\HARDWARE\MPU6050\eMPL\inv_mpu_dmp_motion_driver.h
 ..\obj\main.o: E:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\main.o: ..\HARDWARE\MPU6050\myIMU\my6050.h
+..\obj\main.o: ..\DRIVER\KALMAN\Kalman.h
 ..\obj\main.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\main.o: ..\DRIVER\DATATRANS\datatransfer.h
 ..\obj\main.o: ..\HARDWARE\ADC\adc.h
 ..\obj\main.o: ..\TASK\CHASSIS\Chassis.h
 ..\obj\main.o: ..\DRIVER\MOTOR\motor.h
 ..\obj\main.o: ..\DRIVER\PID\pid.h
-..\obj\main.o: ..\DRIVER\KALMAN\kalman.h

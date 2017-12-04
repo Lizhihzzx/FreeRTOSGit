@@ -34,10 +34,19 @@ QueueHandle_t SpeedQueue;
 
 
 KalmanInfo info;
+extern KalmanInfo AxInfo,AyInfo,AzInfo;
+extern KalmanInfo GxInfo,GyInfo,GzInfo;
 
 int main(void)
 { 
 	Init_KalmanInfo(&info,0.1,0.1);
+	Init_KalmanInfo(&AxInfo,0.1,4);
+	Init_KalmanInfo(&AyInfo,0.1,5);
+	Init_KalmanInfo(&AzInfo,0.1,0.1);
+	Init_KalmanInfo(&GxInfo,0.1,0.3);
+	Init_KalmanInfo(&GyInfo,0.1,0.1);
+	Init_KalmanInfo(&GzInfo,0.1,0.1);
+
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);//设置系统中断优先级分组4
 	delay_init(168);		//初始化延时函数
 	TIM1_PWM_Init(0,0,0);

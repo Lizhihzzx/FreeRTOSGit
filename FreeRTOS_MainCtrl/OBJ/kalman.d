@@ -1,4 +1,4 @@
-..\obj\kalman.o: ..\DRIVER\KALMAN\kalman.c
+..\obj\kalman.o: ..\DRIVER\KALMAN\Kalman.c
 ..\obj\kalman.o: ..\DRIVER\KALMAN\kalman.h
 ..\obj\kalman.o: ..\SYSTEM\sys\sys.h
 ..\obj\kalman.o: ..\USER\stm32f4xx.h

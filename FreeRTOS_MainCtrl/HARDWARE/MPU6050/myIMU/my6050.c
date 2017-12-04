@@ -1,6 +1,16 @@
 #include "my6050.h"
 
 #define PI (3.141592653)
+int Ax,Ay,Az;//观测
+int AxK,AyK,AzK;//观测
+int Gx,Gy,Gz;//观测
+int GxK,GyK,GzK;//观测
+
+KalmanInfo AxInfo,AyInfo,AzInfo;
+KalmanInfo GxInfo,GyInfo,GzInfo;
+double vx,vy,vz;
+double sx,sy,sz;//位移
+
 void MPUCalc(void)
 {
 	//IMU数据
@@ -21,9 +31,38 @@ void MPUCalc(void)
 	gy=gyroy/32768.0*2000/180.0*PI;
 	gz=gyroz/32768.0*2000/180.0*PI;
 
+	gx=gx+0.065;
+	gy=gy+0.006;
+	gz=gz+0.010;
+
+	Gx=gx*1000;
+	Gy=gy*1000;
+	Gz=gz*1000;
+	
+	gx=KalmanFilter(&GxInfo,gx);
+	gy=KalmanFilter(&GyInfo,gy);
+	gz=KalmanFilter(&GzInfo,gz);
+	
+	GxK=gx*1000;
+	GyK=gy*1000;
+	GzK=gz*1000;
+
 	ax=aacx/32768.0*20;
 	ay=aacy/32768.0*20;
 	az=aacz/32768.0*20;
+	
+	Ax=ax*1000;
+	Ay=ay*1000;
+	Az=az*1000;
+
+	ax=KalmanFilter(&AxInfo,ax);
+	ay=KalmanFilter(&AyInfo,ay);
+	az=KalmanFilter(&AzInfo,az);
+
+	
+	AxK=ax*1000;
+	AyK=ay*1000;
+	AzK=az*1000;
 	IMUupdate(gx,gy,gz,ax,ay,az);
 }
 

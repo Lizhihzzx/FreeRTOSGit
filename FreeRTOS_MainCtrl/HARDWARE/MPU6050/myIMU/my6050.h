@@ -5,7 +5,8 @@
 #include "sys.h"
 #include "math.h"
 #include "Kalman.h"
-
+#include "inv_mpu.h"
+#include "inv_mpu_dmp_motion_driver.h"
 typedef struct {
 	float Pitch;
 	float Yaw;

@@ -1,6 +1,7 @@
 #include "my6050.h"
 
 #define PI (3.141592653)
+#define dt (0.001f)//s
 int Ax,Ay,Az;//¹Û²â
 int AxK,AyK,AzK;//¹Û²â
 int Gx,Gy,Gz;//¹Û²â
@@ -102,10 +103,10 @@ void IMUupdate(float gx, float gy, float gz, float ax, float ay, float az)
 	gy = gy + Kp*ey + eyInt; 
 	gz = gz + Kp*ez + ezInt; 
 	
-	q0 = q0 + (-q1*gx - q2*gy - q3*gz)*0.001f*0.5f; 
-	q1 = q1 + (q0*gx + q2*gz - q3*gy)*0.001f*0.5f; 
-	q2 = q2 + (q0*gy - q1*gz + q3*gx)*0.001f*0.5f; 
-	q3 = q3 + (q0*gz + q1*gy - q2*gx)*0.001f*0.5f;   
+	q0 = q0 + (-q1*gx - q2*gy - q3*gz)*dt*0.5f; 
+	q1 = q1 + (q0*gx + q2*gz - q3*gy)*dt*0.5f; 
+	q2 = q2 + (q0*gy - q1*gz + q3*gx)*dt*0.5f; 
+	q3 = q3 + (q0*gz + q1*gy - q2*gx)*dt*0.5f;   
 	qnorm=sqrt(q0*q0+q1*q1+q2*q2+q3*q3);
 	q0=q0/qnorm;
 	q1=q1/qnorm;

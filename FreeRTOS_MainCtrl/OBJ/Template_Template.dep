@@ -92,7 +92,7 @@ I (..\HARDWARE\MPU6050\mpu6050.h)(0x58402D4A)
 I (..\HARDWARE\MPU6050\eMPL\inv_mpu.h)(0x5430BEB8)
 I (..\HARDWARE\MPU6050\eMPL\inv_mpu_dmp_motion_driver.h)(0x5430BEB8)
 I (E:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x5475F2FE)
-I (..\HARDWARE\MPU6050\myIMU\my6050.h)(0x5A255A54)
+I (..\HARDWARE\MPU6050\myIMU\my6050.h)(0x5A269711)
 I (..\DRIVER\KALMAN\Kalman.h)(0x5A210589)
 I (..\HARDWARE\TIMER\timer.h)(0x5A16DD37)
 I (..\DRIVER\DATATRANS\datatransfer.h)(0x5A16F3C1)
@@ -930,8 +930,8 @@ I (..\HARDWARE\MPU6050\eMPL\dmpmap.h)(0x50CA9A0C)
 I (..\SYSTEM\usart\usart.h)(0x5833016E)
 I (..\SYSTEM\sys\sys.h)(0x59BE6030)
 I (..\SYSTEM\delay\delay.h)(0x59BEA43A)
-F (..\HARDWARE\MPU6050\myIMU\my6050.c)(0x5A257024)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\FWLIB\inc -I..\HARDWARE\LED -I..\FreeRTOS\include -I..\FreeRTOS\portable\RVDS\ARM_CM4F -I..\HARDWARE\I2C -I..\HARDWARE\MPU6050 -I..\HARDWARE\MPU6050\eMPL -I..\HARDWARE\MPU6050\myIMU -I..\DRIVER\PID -I..\DRIVER\MOTOR -I..\TASK\CHASSIS -I..\HARDWARE\TIMER -I..\DRIVER\DATATRANS -I..\TASK\TASK -I..\HARDWARE\ADC -I..\DRIVER\KALMAN-I C:\Users\Lee\Desktop\FreeRTOSGit\FreeRTOS_MainCtrl\USER\RTE-I "E:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include"-I "E:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DARM_MATH_CM4 -D__CC_ARM-o ..\obj\my6050.o --omf_browse ..\obj\my6050.crf --depend ..\obj\my6050.d)
-I (..\HARDWARE\MPU6050\myIMU\my6050.h)(0x5A255A54)
+F (..\HARDWARE\MPU6050\myIMU\my6050.c)(0x5A269A68)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\FWLIB\inc -I..\HARDWARE\LED -I..\FreeRTOS\include -I..\FreeRTOS\portable\RVDS\ARM_CM4F -I..\HARDWARE\I2C -I..\HARDWARE\MPU6050 -I..\HARDWARE\MPU6050\eMPL -I..\HARDWARE\MPU6050\myIMU -I..\DRIVER\PID -I..\DRIVER\MOTOR -I..\TASK\CHASSIS -I..\HARDWARE\TIMER -I..\DRIVER\DATATRANS -I..\TASK\TASK -I..\HARDWARE\ADC -I..\DRIVER\KALMAN-I C:\Users\Lee\Desktop\FreeRTOSGit\FreeRTOS_MainCtrl\USER\RTE-I "E:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include"-I "E:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DARM_MATH_CM4 -D__CC_ARM-o ..\obj\my6050.o --omf_browse ..\obj\my6050.crf --depend ..\obj\my6050.d)
+I (..\HARDWARE\MPU6050\myIMU\my6050.h)(0x5A269711)
 I (..\HARDWARE\I2C\i2c.h)(0x5A255655)
 I (..\SYSTEM\sys\sys.h)(0x59BE6030)
 I (..\USER\stm32f4xx.h)(0x5831571A)
@@ -971,6 +971,8 @@ I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x53DBAFAE)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x58402D4A)
 I (E:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x5475F2FE)
 I (..\DRIVER\KALMAN\Kalman.h)(0x5A210589)
+I (..\HARDWARE\MPU6050\eMPL\inv_mpu.h)(0x5430BEB8)
+I (..\HARDWARE\MPU6050\eMPL\inv_mpu_dmp_motion_driver.h)(0x5430BEB8)
 F (..\HARDWARE\TIMER\timer.c)(0x5A180896)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\FWLIB\inc -I..\HARDWARE\LED -I..\FreeRTOS\include -I..\FreeRTOS\portable\RVDS\ARM_CM4F -I..\HARDWARE\I2C -I..\HARDWARE\MPU6050 -I..\HARDWARE\MPU6050\eMPL -I..\HARDWARE\MPU6050\myIMU -I..\DRIVER\PID -I..\DRIVER\MOTOR -I..\TASK\CHASSIS -I..\HARDWARE\TIMER -I..\DRIVER\DATATRANS -I..\TASK\TASK -I..\HARDWARE\ADC -I..\DRIVER\KALMAN-I C:\Users\Lee\Desktop\FreeRTOSGit\FreeRTOS_MainCtrl\USER\RTE-I "E:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include"-I "E:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DARM_MATH_CM4 -D__CC_ARM-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
 I (..\HARDWARE\TIMER\timer.h)(0x5A16DD37)
 I (..\SYSTEM\sys\sys.h)(0x59BE6030)
